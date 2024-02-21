@@ -2,7 +2,7 @@
 
 function koneksi()
 {
-  return mysqli_connect('localhost', 'root', '', '');
+  return mysqli_connect('localhost', 'root', '', 'pw_20108035');
 }
 
 function query($query)

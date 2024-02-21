@@ -1,5 +1,5 @@
-<?php 
-require 'functions.php'
+<?php
+require 'functions.php';
 
 //ambil id dari URL
 $id = $_GET['id'];
