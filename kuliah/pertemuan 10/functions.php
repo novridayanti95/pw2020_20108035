@@ -40,14 +40,6 @@ function tambah($data)
               ('', '$nama', '$nrp', '$email', '$jurusan', '$gambar');
               ";
 
-  mysqli_query($conn, $query);
-  echo mysqli_error($conn);
-  return mysqli_affected_rows($conn);
-}
-
-function hapus($id)
-{
-  $conn = koneksi();
-  mysqli_query($conn, "DELETE FROM mahasiswa WHERE id = $id") or die(mysqli_error($conn));
+  mysqli_query($conn, $query) or die(mysqli_error($conn));
   return mysqli_affected_rows($conn);
 }
